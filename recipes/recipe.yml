@@ -1,8 +1,12 @@
 name: stevio-os
 description: This is my personal OS image.
 
-base-image: ghcr.io/wayblueorg/hyprland
-image-version: latest
+base-image: quay.io/fedora-ostree-desktops/base-atomic
+image-version: 41-aarch64
+
+archs:
+  - x86_64
+  - aarch64
 
 modules:
   - type: files
