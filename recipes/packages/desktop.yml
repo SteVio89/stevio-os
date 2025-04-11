@@ -2,10 +2,12 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 modules:
   - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-41/solopasha-hyprland-fedora-41.repo
     install:
       - hyprland
-      - waybar
       - xdg-desktop-portal-hyprland
+      - hyprpanel
       - hyprpaper
       - hyprlock
       - hypridle
