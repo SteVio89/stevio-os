@@ -4,10 +4,20 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-41/solopasha-hyprland-fedora-41.repo
+      - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-41/tofik-nwg-shell-fedora-41.repo
+      - https://copr.fedorainfracloud.org/coprs/tofik/sway/repo/fedora-41/tofik-sway-fedora-41.repo
+      - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-41/erikreider-SwayNotificationCenter-fedora-41.repo
+      - https://copr.fedorainfracloud.org/coprs/mochaa/gtk-session-lock/repo/fedora-41/mochaa-gtk-session-lock-fedora-41.repo
     install:
+      - nwg-shell
       - hyprland
       - xdg-desktop-portal-hyprland
-      - hyprpanel
-      - hyprpaper
-      - hyprlock
-      - hypridle
+      - wlr-randr
+      # - hyprpanel
+      # - hyprpaper
+      # - hyprlock
+      # - hypridle
+  - type: script
+    snippets:
+      - "sudo -u stefan nwg-shell-installer -w -hypr"
+      - "sudo -u stefan xdg-user-dirs-update"
