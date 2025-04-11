@@ -12,7 +12,7 @@ on:
   workflow_dispatch: # allow manually triggering builds
 jobs:
   bluebuild-arm64:
-    name: Build image for arm64
+    name: Build images
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -28,7 +28,7 @@ jobs:
             arch: arm64
     steps:
       # the build is fully handled by the reusable github action
-      - name: Build image
+      - name: Build image for ${{ matrix.build-info.arch }}
         uses: blue-build/github-action@v1.8
         with:
           recipe: ${{ matrix.build-info.recipe }}
