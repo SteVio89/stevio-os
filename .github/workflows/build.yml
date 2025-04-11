@@ -12,8 +12,8 @@ on:
   workflow_dispatch: # allow manually triggering builds
 jobs:
   bluebuild:
-    name: Build stevio-os images
-    runs-on: ubuntu-latest
+    name: Build stevio-os image for ${{ matrix.build-info.arch }}
+    runs-on: ${{ matrix.build-info.runner }}
     permissions:
       contents: read
       packages: write
@@ -24,8 +24,10 @@ jobs:
         build-info:
           - recipe: recipe-arm64.yml
             arch: arm64
+            runner: ubuntu-24.04-arm
           - recipe: recipe-amd64.yml
             arch: amd64
+            runner: ubuntu-latest
     steps:
       - name: Build image for ${{ matrix.build-info.arch }}
         uses: blue-build/github-action@v1.8
