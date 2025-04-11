@@ -10,6 +10,8 @@ image-version: 41-aarch64
 
 modules:
   - from-file: packages/desktop.yml
+  - from-file: packages/vmware.yml
+  - from-file: packages/common.yml
   - type: files
     files:
       - source: system
