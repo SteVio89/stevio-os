@@ -11,23 +11,22 @@ on:
   pull_request:
   workflow_dispatch: # allow manually triggering builds
 jobs:
-  bluebuild-arm64:
-    name: Build images
+  bluebuild:
+    name: Build stevio-os images
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
       id-token: write
     strategy:
-      fail-fast: false # stop GH from cancelling all matrix builds if one fails
+      fail-fast: false
       matrix:
         build-info:
-          - recipe: recipe-amd64.yml
-            arch: amd64
           - recipe: recipe-arm64.yml
             arch: arm64
+          - recipe: recipe-amd64.yml
+            arch: amd64
     steps:
-      # the build is fully handled by the reusable github action
       - name: Build image for ${{ matrix.build-info.arch }}
         uses: blue-build/github-action@v1.8
         with:
@@ -37,5 +36,4 @@ jobs:
           pr_event_number: ${{ github.event.number }}
           squash: true
           build_opts: --platform linux/${{ matrix.build-info.arch }}
-          # enabled by default, disable if your image is small and you want faster builds
           maximize_build_space: true
