@@ -19,5 +19,5 @@ modules:
       # - hypridle
   - type: script
     snippets:
-      - "sudo -u stefan nwg-shell-installer -w -hypr"
-      - "sudo -u stefan xdg-user-dirs-update"
+      - "su - stefan nwg-shell-installer -w -hypr"
+      - "su - stefan xdg-user-dirs-update"
