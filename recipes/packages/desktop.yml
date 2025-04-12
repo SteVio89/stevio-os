@@ -17,7 +17,7 @@ modules:
       # - hyprpaper
       # - hyprlock
       # - hypridle
-  - type: script
-    snippets:
-      - "su - stefan nwg-shell-installer -w -hypr"
-      - "su - stefan xdg-user-dirs-update"
+  # - type: script
+  # snippets:
+  # - "su - stefan nwg-shell-installer -w -hypr"
+  # - "su - stefan xdg-user-dirs-update"

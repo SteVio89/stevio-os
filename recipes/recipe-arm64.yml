@@ -9,9 +9,9 @@ base-image: quay.io/fedora-ostree-desktops/base-atomic
 image-version: 41-aarch64
 
 modules:
-  - type: script
-    snippets:
-      - "useradd -m -G wheel stefan"
+  # - type: script
+  #   snippets:
+  #     - "useradd -m -G wheel stefan"
   - from-file: packages/common.yml
   - from-file: packages/vmware.yml
   - from-file: packages/desktop.yml
