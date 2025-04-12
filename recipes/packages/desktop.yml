@@ -13,10 +13,6 @@ modules:
       - hyprland
       - xdg-desktop-portal-hyprland
       - wlr-randr
-      # - hyprpanel
-      # - hyprpaper
-      # - hyprlock
-      # - hypridle
   # - type: script
   # snippets:
   # - "su - stefan nwg-shell-installer -w -hypr"

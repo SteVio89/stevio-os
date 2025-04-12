@@ -15,6 +15,10 @@ modules:
   - from-file: packages/common.yml
   - from-file: packages/vmware.yml
   - from-file: packages/desktop.yml
+  - type: justfiles
+    validate: true
+  # - type: chezmoi
+  #   install: false
   - type: files
     files:
       - source: system
