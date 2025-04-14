@@ -3,9 +3,6 @@
 modules:
   - type: rpm-ostree
     install:
-      # launcher
-      # - rofi-wayland
-
       # environment
       - fzf
       # - tuned-ppd
@@ -15,14 +12,13 @@ modules:
       # - polkit
       # - xfce-polkit
       # - fprintd-pam
-      # - xdg-user-dirs
+      - xdg-user-dirs
       # - dbus-tools
       # - dbus-daemon
       # - wl-clipboard
       # - pavucontrol
       # - playerctl
-      - qt5-qtwayland
-      - qt6-qtwayland
+
       # - vulkan-validation-layers
       # - vulkan-tools
       # - google-noto-emoji-fonts
@@ -34,12 +30,6 @@ modules:
       # - alsa-firmware
       # - p7zip
       # - distrobox
-
-      # sound
-      - wireplumber
-      - pipewire
-      - pamixer
-      - pulseaudio-utils
 
       # networking
       - network-manager-applet
