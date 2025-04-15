@@ -30,7 +30,7 @@ modules:
       # Desktop background
       - hyprpaper
       # idle
-      - hypridl
+      - hypridle
       # login manager and lock screen
       - uwsm
       - hyprlock
