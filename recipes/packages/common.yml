@@ -6,21 +6,21 @@ modules:
       # environment
       - fzf
       # - tuned-ppd
-      # - xorg-x11-server-Xwayland
+      - xorg-x11-server-Xwayland
       # - headsetcontrol
-      # - mediainfo
-      # - polkit
+      - mediainfo
+      - polkit
       # - xfce-polkit
       # - fprintd-pam
       - xdg-user-dirs
-      # - dbus-tools
-      # - dbus-daemon
-      # - wl-clipboard
+      - dbus-tools
+      - dbus-daemon
+      - wl-clipboard
       # - pavucontrol
       # - playerctl
 
-      # - vulkan-validation-layers
-      # - vulkan-tools
+      - vulkan-validation-layers
+      - vulkan-tools
       # - google-noto-emoji-fonts
       # - gnome-disk-utility
       # - ddcutil
@@ -58,13 +58,13 @@ modules:
       # - android-tools
 
       # screenshot
-      # - slurp
-      # - grim
+      - slurp
+      - grim
 
       # display
       # - wlr-randr
       # - wlsunset
-      # - brightnessctl
+      - brightnessctl
       # - kanshi
 
       # notifications
