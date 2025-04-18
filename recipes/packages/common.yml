@@ -2,8 +2,11 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 modules:
   - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-42/pgdev-ghostty-fedora-42.repo
     install:
       # environment
+      - ghostty
       - fzf
       - tuned-ppd
       - xorg-x11-server-Xwayland

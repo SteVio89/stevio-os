@@ -3,12 +3,9 @@
 modules:
   - type: rpm-ostree
     repos:
-      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-41/solopasha-hyprland-fedora-41.repo
-      - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-41/tofik-nwg-shell-fedora-41.repo
-      - https://copr.fedorainfracloud.org/coprs/tofik/sway/repo/fedora-41/tofik-sway-fedora-41.repo
-      - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-41/erikreider-SwayNotificationCenter-fedora-41.repo
-      - https://copr.fedorainfracloud.org/coprs/mochaa/gtk-session-lock/repo/fedora-41/mochaa-gtk-session-lock-fedora-41.repo
-      - https://copr.fedorainfracloud.org/coprs/msmafra/hyprland/repo/fedora-41/msmafra-hyprland-fedora-41.repo
+      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-42/solopasha-hyprland-fedora-42.repo
+      - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-42/erikreider-SwayNotificationCenter-fedora-42.repo
+      - https://copr.fedorainfracloud.org/coprs/msmafra/hyprland/repo/fedora-42/msmafra-hyprland-fedora-42.repo
     install:
       # hyprland and dependencies
       - hyprland

@@ -4,3 +4,4 @@ modules:
   - type: rpm-ostree
     install:
       - open-vm-tools
+      - open-vm-tools-desktop
