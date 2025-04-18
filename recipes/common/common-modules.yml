@@ -158,9 +158,9 @@ modules:
       - source: system/etc
         destination: /etc
 
-  - type: gschema-overrides
-    include:
-      - zz1-secureblue-theming.gschema.override
+  # - type: gschema-overrides
+  #   include:
+  #     - zz1-secureblue-theming.gschema.override
 
   - type: script
     scripts:
