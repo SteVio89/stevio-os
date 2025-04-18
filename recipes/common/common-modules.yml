@@ -167,5 +167,5 @@ modules:
       - settheming.sh
       - addbrewjustimport.sh
 
-  - type: wayblue-signing
-    source: local
+  # - type: wayblue-signing
+  #   source: local
