@@ -5,9 +5,9 @@ modules:
     install:
       # environment
       - fzf
-      # - tuned-ppd
+      - tuned-ppd
       - xorg-x11-server-Xwayland
-      # - headsetcontrol
+      - headsetcontrol
       - mediainfo
       - polkit
       # - xfce-polkit
@@ -16,19 +16,19 @@ modules:
       - dbus-tools
       - dbus-daemon
       - wl-clipboard
-      # - pavucontrol
+      - pavucontrol
       # - playerctl
 
       - vulkan-validation-layers
       - vulkan-tools
       # - google-noto-emoji-fonts
-      # - gnome-disk-utility
-      # - ddcutil
+      - gnome-disk-utility
+      - ddcutil
       - openssl
-      # - vim
+      - neovim
       - just
-      # - alsa-firmware
-      # - p7zip
+      - alsa-firmware
+      - p7zip
       # - distrobox
 
       # networking
@@ -47,14 +47,14 @@ modules:
       - thunar-archive-plugin
       - thunar-volman
       - xarchiver
-      # - imv
-      # - p7zip
-      # - gvfs-mtp
-      # - gvfs-gphoto2
-      # - gvfs-smb
-      # - gvfs-nfs
-      # - gvfs-fuse
-      # - gvfs-archive
+      - imv
+      - p7zip
+      - gvfs-mtp
+      - gvfs-gphoto2
+      - gvfs-smb
+      - gvfs-nfs
+      - gvfs-fuse
+      - gvfs-archive
       # - android-tools
 
       # screenshot
@@ -62,13 +62,9 @@ modules:
       - grim
 
       # display
-      # - wlr-randr
-      # - wlsunset
+      - wlsunset
       - brightnessctl
-      # - kanshi
-
-      # notifications
-      # - dunst
+      - kanshi
 
       # theme and GUI
       - fontawesome-fonts-all
