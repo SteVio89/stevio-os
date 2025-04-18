@@ -29,12 +29,7 @@ modules:
       # idle
       - hypridle
       # login manager and lock screen
-      - uwsm
+      # - uwsm
       - hyprlock
       # auth agent
       - hyprpolkitagent
-
-  # - type: script
-  # snippets:
-  # - "su - stefan nwg-shell-installer -w -hypr"
-  # - "su - stefan xdg-user-dirs-update"
