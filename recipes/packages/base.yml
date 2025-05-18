@@ -6,12 +6,10 @@ modules:
         enable:
           - solopasha/hyprland
           - erikreider/SwayNotificationCenter
-      cleanup: false
     install:
       install-weak-deps: false
       packages:
         - hyprland
-        # Hyprland dependencies
         - SwayNotificationCenter
         - pipewire
         - wireplumber
@@ -19,5 +17,4 @@ modules:
         - hyprpolkitagent
         - qt5-wayland
         - qt6-wayland
-        # Other
         - xdg-user-dirs
