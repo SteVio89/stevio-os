@@ -25,9 +25,12 @@ jobs:
           - recipe: recipe-arm64.yml
             arch: arm64
             runner: ubuntu-24.04-arm
-          - recipe: recipe-amd64.yml
-            arch: amd64
-            runner: ubuntu-latest
+          - recipe: recipe-arm64-rpm.yml
+            arch: arm64
+            runner: ubuntu-24.04-arm
+          # - recipe: recipe-amd64.yml
+          #   arch: amd64
+          #   runner: ubuntu-latest
     steps:
       - name: Build image for ${{ matrix.build-info.arch }}
         uses: blue-build/github-action@v1.8.1
