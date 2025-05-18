@@ -2,27 +2,21 @@
 modules:
   - type: dnf
     repos:
-      files:
-        add:
-          - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
-          - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
-      # copr:
-      #   enable:
-      #     - solopasha/hyprland
-      #     - erikreider/SwayNotificationCenter
+      copr:
+        enable:
+          - solopasha/hyprland
+          - erikreider/SwayNotificationCenter
     install:
       install-weak-deps: false
       packages:
-        - repo: solopasha-hyprland-fedora-%OS_VERSION%
-          packages:
-            - hyprland
-            - hyprpolkitagent
-            - xdg-desktop-portal-hyprland
-        - repo: erikreider-SwayNotificationCenter-fedora-%OS_VERSION%
-          packages:
-            - SwayNotificationCenter
+        - hyprland
+        - hyprpolkitagent
+        - xdg-desktop-portal-hyprland
+        - SwayNotificationCenter
         - pipewire
         - wireplumber
-        - qt5-wayland
-        - qt6-wayland
+        - qt5-qtwayland
+        - qt6-qtwayland
         - xdg-user-dirs
+        - slurp
+        - grim
