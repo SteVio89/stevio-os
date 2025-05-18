@@ -1,15 +1,12 @@
 name: bluebuild
 on:
   schedule:
-    - cron:
-        "00 06 * * *" # build at 06:00 UTC every day
-        # (20 minutes after last ublue images start building)
+    - cron: "00 06 * * *"
   push:
-    paths-ignore: # don't rebuild if only documentation has changed
+    paths-ignore:
       - "**.md"
-
   pull_request:
-  workflow_dispatch: # allow manually triggering builds
+  workflow_dispatch:
 jobs:
   bluebuild:
     name: Build stevio-os image for ${{ matrix.build-info.arch }}
@@ -25,9 +22,9 @@ jobs:
           - recipe: recipe-arm64.yml
             arch: arm64
             runner: ubuntu-24.04-arm
-          - recipe: recipe-arm64-rpm.yml
-            arch: arm64
-            runner: ubuntu-24.04-arm
+          # - recipe: recipe-arm64-rpm.yml
+          #   arch: arm64
+          #   runner: ubuntu-24.04-arm
           # - recipe: recipe-amd64.yml
           #   arch: amd64
           #   runner: ubuntu-latest
