@@ -3,8 +3,9 @@ modules:
   - type: dnf
     repos:
       copr:
-        - solopasha/hyprland
-        - erikreider/SwayNotificationCenter
+        enable:
+          - solopasha/hyprland
+          - erikreider/SwayNotificationCenter
       cleanup: false
     install:
       install-weak-deps: false

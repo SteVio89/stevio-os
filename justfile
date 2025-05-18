@@ -4,4 +4,5 @@ default:
     just -l
 
 verify:
-    bluebuild validate recipes/*
+    bluebuild validate recipes/recipe-arm64.yml
+    bluebuild validate recipes/recipe-amd64.yml
