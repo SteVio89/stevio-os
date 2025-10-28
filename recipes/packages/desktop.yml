@@ -5,10 +5,14 @@ modules:
       copr:
         enable:
           - yalter/niri
+          - errornointernet/quickshell
     install:
       packages:
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
         - gnome-keyring
-        - plasma-polkit-agent
+        - polkit-gnome
         - niri
+        - fuzzel
+        - waybar
+        - quickshell
