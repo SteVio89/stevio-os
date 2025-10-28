@@ -19,20 +19,17 @@ jobs:
       fail-fast: false
       matrix:
         build-info:
-          - recipe: recipe-arm64.yml
-            arch: arm64
-            runner: ubuntu-24.04-arm
-          # - recipe: recipe-arm64-rpm.yml
+          # - recipe: recipe-arm64.yml
           #   arch: arm64
           #   runner: ubuntu-24.04-arm
-          # - recipe: recipe-amd64.yml
-          #   arch: amd64
-          #   runner: ubuntu-latest
+          - recipe: recipe-amd64.yml
+            arch: amd64
+            runner: ubuntu-latest
     steps:
       - name: Build image for ${{ matrix.build-info.arch }}
-        uses: blue-build/github-action@v1.8.1
+        uses: blue-build/github-action@v1.9.1
         with:
-          cli_version: v0.9.12
+          cli_version: v0.9.24
           recipe: ${{ matrix.build-info.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}

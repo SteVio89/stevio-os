@@ -1,22 +1,9 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 modules:
-  - type: dnf
-    repos:
-      copr:
-        enable:
-          - solopasha/hyprland
-          - erikreider/SwayNotificationCenter
+  - type: rpm-ostree
     install:
-      install-weak-deps: false
-      packages:
-        - hyprland
-        - hyprpolkitagent
-        - xdg-desktop-portal-hyprland
-        - SwayNotificationCenter
-        - pipewire
-        - wireplumber
-        - qt5-qtwayland
-        - qt6-qtwayland
-        - xdg-user-dirs
-        - slurp
-        - grim
+      - pipewire
+      - wireplumber
+      - qt5-qtwayland
+      - qt6-qtwayland
+      - xdg-user-dirs

@@ -1,7 +1,9 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 modules:
-  - type: dnf
+  - type: rpm-ostree
     install:
-      packages:
-        - open-vm-tools
-        - open-vm-tools-desktop
+      - firefox
+      - foot
+      - neovim
+      - just
+      - git
