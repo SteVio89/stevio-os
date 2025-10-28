@@ -1,9 +1,10 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 modules:
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - pipewire
-      - wireplumber
-      - qt5-qtwayland
-      - qt6-qtwayland
-      - xdg-user-dirs
+      packages:
+        - pipewire
+        - wireplumber
+        - qt5-qtwayland
+        - qt6-qtwayland
+        - xdg-user-dirs
