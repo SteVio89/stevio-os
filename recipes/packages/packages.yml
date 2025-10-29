@@ -12,6 +12,7 @@ modules:
         # base
         - pipewire
         - wireplumber
+        - playerctl
         - qt5-qtwayland
         - qt6-qtwayland
         - xdg-user-dirs
@@ -26,14 +27,22 @@ modules:
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
         - gnome-keyring
-        - polkit-qt
+        - polkit-qt6
         - greetd
+        - gtkgreet
         - niri
-        # apps
+        - swaybg
+        - swayidle
+        - swaylock
+        # cli apps
+        - zsh
+        - git
+        - ripgrep
+        - fzf
+        - just
+        - neovim
+        # gui apps
         - fuzzel
         - quickshell
         - firefox
         - foot
-        - neovim
-        - just
-        - git
