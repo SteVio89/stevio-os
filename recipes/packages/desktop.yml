@@ -11,7 +11,7 @@ modules:
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
         - gnome-keyring
-        - polkit-gnome
+        - polkit-kde
         - niri
         - fuzzel
         - waybar
