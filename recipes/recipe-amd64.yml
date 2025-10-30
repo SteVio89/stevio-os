@@ -19,4 +19,7 @@ modules:
     system:
       enabled:
         - gdm-boot.service
+    user:
+      enabled:
+        - swaybg.service
   - type: signing
