@@ -37,6 +37,9 @@ modules:
         - fzf
         - just
         - neovim
+        - distrobox
+        - toolbox
+        - direnv
         # gui apps
         - fuzzel
         - quickshell
