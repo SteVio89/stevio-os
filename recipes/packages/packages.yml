@@ -37,6 +37,7 @@ modules:
         - fzf
         - just
         - neovim
+        - podman
         - distrobox
         - toolbox
         - direnv
