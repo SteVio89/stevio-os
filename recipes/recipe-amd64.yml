@@ -18,6 +18,5 @@ modules:
   - type: systemd
     system:
       enabled:
-        - greetd-boot.service
-        - greetd.service
+        - gdm-boot.service
   - type: signing

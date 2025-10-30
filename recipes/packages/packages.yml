@@ -22,10 +22,9 @@ modules:
         # desktop
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
+        - gdm
         - gnome-keyring
         - polkit-qt6-1
-        - greetd
-        - gtkgreet
         - niri
         - swaybg
         - swayidle
