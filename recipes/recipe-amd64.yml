@@ -11,4 +11,13 @@ image-version: 43
 
 modules:
   - from-file: packages/packages.yml
+  - type: files
+    files:
+      - source: system
+        destination: /
+  - type: systemd
+    system:
+      enabled:
+        - greetd-boot.service
+        - greetd.service
   - type: signing
