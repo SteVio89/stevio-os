@@ -6,3 +6,6 @@ Requisite=graphical-session.target
 [Service]
 ExecStart=/usr/bin/swaybg -m fill -i "/usr/share/backgrounds/background_cat.jpg"
 Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target
