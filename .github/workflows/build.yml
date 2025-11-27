@@ -27,7 +27,7 @@ jobs:
             runner: ubuntu-latest
     steps:
       - name: Build image for ${{ matrix.build-info.arch }}
-        uses: blue-build/github-action@v1.9.1
+        uses: blue-build/github-action@v1.10.0
         with:
           cli_version: v0.9.24
           recipe: ${{ matrix.build-info.recipe }}
